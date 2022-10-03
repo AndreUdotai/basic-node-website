@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./css/style.css" type="text/css" rel="stylesheet">
+    <title>A simple node website</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        body {
+            background-color: silver;
+        }
+        #header {
+            background-color: goldenrod;
+
+        }
+        ul {
+            display: flex;
+            list-style-type: none;
+            justify-content: center;
+            /* width: 80%; */
+        }
+
+        li{
+            margin: 20px;
+            font-size: 3rem;
+            background-color: rgba(255, 255, 255, 0.221);
+            padding: 5px 10px;
+            /* max-width: 170px; */
+            text-align: center;
+            border-radius: 5px;
+            color: rgba(0, 0, 0, 0.753);
+        }
+        #content {
+            font-size: 2rem;
+            text-align: center;
+            margin-top: 20px;
+        }
+        span {
+            background-color: black;
+            color: rgb(164, 164, 164);
+            padding: 5px 10px;
+            border-radius: 5px;
+        }
+        .active {
+            border: 5px solid rgba(255, 255, 255, 0.221);
+        }
+    </style>
+</head>
+<body>
+    <div id="main">
+        <div id="header">
+            <ul>
+                <li>Home</li>
+                <li>About</li>
+                <li class="active">Contact</li>
+            </ul>
+        </div>
+        <div id="content">
+            Do you fly? Catch me on the bird app! <span>@youbee_</span>
+        </div>
+    </div>
+</body>
+</html>
