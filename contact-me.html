@@ -50,15 +50,19 @@
         .active {
             border: 5px solid rgba(255, 255, 255, 0.221);
         }
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
     </style>
 </head>
 <body>
     <div id="main">
         <div id="header">
             <ul>
-                <li>Home</li>
-                <li>About</li>
-                <li class="active">Contact</li>
+                <li><a href="/">Home</a></li>
+                <li><a href="/about">About</a></li>
+                <li class="active"><a href="/contact-me">Contact</a></li> 
             </ul>
         </div>
         <div id="content">
