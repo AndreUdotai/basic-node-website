@@ -5,18 +5,20 @@ const router = express.Router();
 
 const port = 3000;
 
-router.get('/', function (req, res) {
-    res.sendFile(path.join(__dirname + '/index.html'));
-    //__dirname : It will resolve to your project folder.
-});
+app.use(express.static(path.join(__dirname, 'public')));
 
-router.get('/about', function (req, res) {
-    res.sendFile(path.join(__dirname + '/about.html'));
-});
+// router.get('/', function (req, res) {
+//     res.sendFile(path.join(__dirname + '/index.html'));
+//     //__dirname : It will resolve to your project folder.
+// });
 
-router.get('/contact-me', function (req, res) {
-    res.sendFile(path.join(__dirname + '/contact-me.html'));
-});
+// router.get('/about', function (req, res) {
+//     res.sendFile(path.join(__dirname + '/about.html'));
+// });
+
+// router.get('/contact-me', function (req, res) {
+//     res.sendFile(path.join(__dirname + '/contact-me.html'));
+// });
 
 router.get('*', function (req, res) {
   res.sendFile(path.join(__dirname + '/404.html'));

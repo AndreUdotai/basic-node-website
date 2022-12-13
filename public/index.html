@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="./css/style.css" type="text/css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
     <title>A simple node website</title>
     <style>
         *{
@@ -35,9 +35,10 @@
             text-align: center;
             border-radius: 5px;
             color: rgba(0, 0, 0, 0.753);
+
         }
         #content {
-            font-size: 10rem;
+            font-size: 2rem;
             text-align: center;
             margin-top: 20px;
         }
@@ -46,6 +47,9 @@
             color: rgb(164, 164, 164);
             padding: 5px 10px;
             border-radius: 5px;
+        }
+        .active {
+            border: 5px solid rgba(255, 255, 255, 0.221);
         }
         a {
             text-decoration: none;
@@ -57,21 +61,15 @@
     <div id="main">
         <div id="header">
             <ul>
-                <li><a href="/">Home</a></li>
+                <li class="active"><a href="/">Home</a></li>
                 <li><a href="/about.html">About</a></li>
                 <li><a href="/contact-me.html">Contact</a></li> 
             </ul>
         </div>
         <div id="content">
-            404 <span>Error!</span>
+            Welcome to the <span>Node</span> cave!
         </div>
     </div>
-    <script>
-        let home = document.getElementById('home');
-
-        home.addEventListener('click', ()=>{
-            alert('asdfasdfas')
-        })
-    </script>
+    <script src="main.js"></script>
 </body>
 </html>

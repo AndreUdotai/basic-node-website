@@ -37,7 +37,7 @@
             color: rgba(0, 0, 0, 0.753);
         }
         #content {
-            font-size: 10rem;
+            font-size: 2rem;
             text-align: center;
             margin-top: 20px;
         }
@@ -46,6 +46,9 @@
             color: rgb(164, 164, 164);
             padding: 5px 10px;
             border-radius: 5px;
+        }
+        .active {
+            border: 5px solid rgba(255, 255, 255, 0.221);
         }
         a {
             text-decoration: none;
@@ -59,19 +62,12 @@
             <ul>
                 <li><a href="/">Home</a></li>
                 <li><a href="/about.html">About</a></li>
-                <li><a href="/contact-me.html">Contact</a></li> 
+                <li class="active"><a href="/contact-me.html">Contact</a></li> 
             </ul>
         </div>
         <div id="content">
-            404 <span>Error!</span>
+            Do you fly? Catch me on the bird app! <span>@youbee_</span>
         </div>
     </div>
-    <script>
-        let home = document.getElementById('home');
-
-        home.addEventListener('click', ()=>{
-            alert('asdfasdfas')
-        })
-    </script>
 </body>
 </html>
